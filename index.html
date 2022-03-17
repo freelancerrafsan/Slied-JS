@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="customar-revews">
+
+
+        <div id="slider" class="slider">
+            <div id="card" class="card">
+                <div class="profile">
+                    <img src="image/image1.jpg" alt="">
+                    <div class="titel">
+                        <h1>Jahid Islam Rafsan</h1>
+                        <h5>Web Devolopmant</h5>
+                    </div>
+                </div>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sequi odio, sed eaque quidem
+                    quisquam doloribus, repellat ducimus laboriosam cupiditate laudantium quae ipsam, alias officia!
+                    Excepturi voluptates quo voluptate facilis. </p>
+            </div>
+
+            <div id="card" class="card">
+                <div class="profile">
+                    <img src="image/image2.jpg" alt="">
+                    <div class="titel">
+                        <h1>Freelancer Rafsan</h1>
+                        <h5>Web Design</h5>
+                    </div>
+                </div>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sequi odio, sed eaque quidem
+                    quisquam doloribus, repellat ducimus laboriosam cupiditate laudantium quae ipsam, alias officia!
+                    Excepturi voluptates quo voluptate facilis. </p>
+            </div>
+
+            <div id="card" class="card">
+                <div class="profile">
+                    <img src="image/image3.jpg" alt="">
+                    <div class="titel">
+                        <h1>Mahid Islam</h1>
+                        <h5>Cricker</h5>
+                    </div>
+                </div>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sequi odio, sed eaque quidem
+                    quisquam doloribus, repellat ducimus laboriosam cupiditate laudantium quae ipsam, alias officia!
+                    Excepturi voluptates quo voluptate facilis. </p>
+            </div>
+
+            <div id="card" class="card">
+                <div class="profile">
+                    <img src="image/image4.jpg" alt="">
+                    <div class="titel">
+                        <h1>Jahid Islam Rafsan</h1>
+                        <h5>Online Marketing</h5>
+                    </div>
+                </div>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sequi odio, sed eaque quidem
+                    quisquam doloribus, repellat ducimus laboriosam cupiditate laudantium quae ipsam, alias officia!
+                    Excepturi voluptates quo voluptate facilis. </p>
+            </div>
+
+
+            <div id="card" class="card">
+                <div class="profile">
+                    <img src="image/image5.jpg" alt="">
+                    <div class="titel">
+                        <h1>Oboni</h1>
+                        <h5>Web Devolopmant</h5>
+                    </div>
+                </div>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet sequi odio, sed eaque quidem
+                    quisquam doloribus, repellat ducimus laboriosam cupiditate laudantium quae ipsam, alias officia!
+                    Excepturi voluptates quo voluptate facilis. </p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    </div>
+    <div class="sidebar">
+        <img src="image/up-arrow.png" alt="" onclick="uparrow()">
+        <img src="image/down-arrow.png" alt="" onclick="downarrow()">
+    </div>
+
+
+
+
+
+    <script>
+        let slider = document.getElementById("slider");
+
+        var x = 0;
+        function uparrow() {
+
+            if (x > "-1120") {
+                x = x - 280;
+                slider.style.top = x + "px";
+            }
+        }
+
+
+        function downarrow() {
+
+            if (x < "0") {
+                x = x + 280;
+                slider.style.top = x + "px";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
